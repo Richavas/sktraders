@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock  %}
+
+
+{% block body %} 
+<div class="form-control" border>
+  
+  
+  
+  
+  <div>
+  <label>Name</label>
+  <input type="text" name="name" placeholder="Enter your name">
+  </div>
+  <br>
+  <div>
+  <label>Number</label>
+  <input type="number" name="number" placeholder="Enter your 10 digit number">
+  </div>
+   <br>
+  <div>
+  <label>Email</label>
+  <input type="text" name="email" placeholder="someone@id.com">
+  </div>
+  <br>
+  <div>
+  <label for="Address">Address</label><br>
+  <textarea type="text" name="Address" id="Address" placeholder="Enter your Address"></textarea>
+  </div>
+   <br>
+  <div>
+  <label>Gender :</label>
+  <input type="radio" name="myGender"  value="male" >male
+  <input type="radio" name="myGender"  value="Female">Female
+  </div>
+  
+   <br>
+  <div>
+  <label>Are you a Robot : </label><br>
+  <input type="checkbox" name="Robot" value="Are you a robot" checked>
+  </div>
+  <div>
+    <label for="place">Enter the location for joining</label>
+    <select name="place" id="place">
+    <option value="pune" selected>Pune</option>
+    <option value="noida">Noida</option>
+    <option value="kochi">Kochi</option>
+    </select>
+  </div>
+    <br>
+  <div>
+  <button name="submit">Submit</button>
+  </div>
+  <a href="https://www.google.com/" target="_blank">Go to google</a><br>
+  <a href="https://www.facebook.com/" target="_blank">Go to facebook</a><br>
+  <a href="https://www.twitter.com/" target="_blank">Go to twitter</a><br>
+  <h1> table</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>company</th>
+        <th>role</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pavas</td>
+        <td>BPCL</td>
+        <td>Ass Manager</td>
+        <td>100k</td>
+      </tr>
+      <tr>
+        <td>ayushi</td>
+        <td>BPCL</td>
+        <td>Ass Peon</td>
+        <td>10k</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
+
+{% endblock %}

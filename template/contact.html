@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock  %}
+
+
+{% block body %} 
+<div class="container px=0">
+      <img src='/static/phone.jfif' class="d-block w-100" alt="House" height='400' py=4>
+</div >
+<div class='row border'>
+<div class=' col-sm-4 '>
+<div class='container text-center alert alert-success'>
+  <h5>We are the best seller and dealer of the building material. With us you can expect honesty and we will be there 24x7 for your help.</h5>
+</div></div>
+  <div class='col-sm-4'>
+    
+    <div class="container text-center alert alert-primary px=4">
+      <h3 >Subodh jain</h3>
+      <h6> 7/14 Lala lajpat rai colony</h6>
+      <h6> near surjeet bajaj showroom bhopal</h6>
+      <h6>0755-2591775,9425009473, 9425015047</h6>
+    </div>
+  </div>
+  <div class='container text-center col-sm-4 alert alert-warning'>
+    <h4><u>let us know about you.</u></h4>
+    <form class="row g-3" method="post" action="/contact">
+        {% csrf_token %}
+
+    <div class="form-inline text-center">
+      <label for="name" >Name </label><br>
+      <input type="text" id="name" name='name' placeholder="Enter your name"><br>
+      <label for="number" >Phone Number</label><br>
+      <input type="input" id="number" name='number' placeholder="Enter 10 digit number"><br>
+      <label for="inputAddress" >Address</label><br>
+      <input type="text" id="inputAddress" name='inputAddress'><br>
+      <label for="inputCity">City</label><br>
+      <input type="text" id="inputCity" name='inputCity'><br>
+      <label for="inputState">State</label><br>
+      <input type="text" id="inputState" name='inputState'><br>
+    </div>
+    <div class="form-group text-center"><br>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

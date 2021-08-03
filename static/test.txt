@@ -1,0 +1,2 @@
+hey this is static file.
+Here you can store only that info which need to be shared with the user.

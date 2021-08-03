@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}home{% endblock  %}
+
+
+{% block body %} 
+<div class='container' px=0>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/house.jfif" class="d-block w-100" alt="Ghar" height='400' width='300' py=4>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Let's build a city</h5>
+        <p>A city of your dream.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/static/house2.jfif" class="d-block w-100" alt="Our house" height='400' width='300' py=4>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Innovating India</h5>
+        <p>An India of our dreams.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src='/static/greyHouse.jfif' class="d-block w-100" alt="House" height='400' width='300' py=4>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Recreating our surrounding</h5>
+        <p>A place where you can live.</p>
+      </div>
+      <div>
+      </div>
+    </div>
+  </div><br>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <h1 class ='text-center'><u>S.K.Traders</u></h1>
+  <h3>Let's build a city</h3>
+  
+  <span>Amongst India's largest integrated Building Materials Company
+Established in 1997 promoted by Mr. Gulab chand jain, S.K.Traders is one of the largest supplier of building material at a single location in the country at Bhopal.</span>
+<br>
+<span>We deals in different companies of Cement, steel and also sand and full range of waterproofs are available with us. We have consolidated our position as one of the premium dealer and supplier of building material at a very reasonable range.</span>
+<p>The company is managed by our C.E.O.<strong> Mr Subodh jain.</strong> He worked upon the comapany in the ebst possible way. His vision keep up the records and he brought the company to be named among the top list. And also the M.D. of the company <strong>Mr. Ankush jain</strong> strongly supported the vision and the power to this company to this level. </p>
+</div>
+
+
+{% endblock %}
